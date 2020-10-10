@@ -1,0 +1,38 @@
+# This is a template config file
+# define your parameter and its value like:
+Messages:
+  ErrorMsg : "&c[CoinFlip] : Some error occured."
+  NoSuchPlayer : "&c[CoinFlip] : No such player online!"
+  NotEnoughMoney : "&c[CoinFlip] : You don't have that many %currency%s to bet!"
+  MatchCreated : "&a[CoinFlip] : You created a CoinFlip match!"
+  MatchCreatedBroadcast : "&a[CoinFlip] : %player% created a CoinFlip match!"
+  AlreadyInMatch : "&c[CoinFlip] : You are already in a CoinFlip!"
+  CanceledMatch : "&c[CoinFlip] : You have left your CoinFlip match!"
+  NotInMatch : "&c[CoinFlip] : You are not in a CoinFlip!"
+  CantMatchWager : "&c[CoinFlip] : You don't have enough %currency%s to match this bet!"
+  CantEnterOwnMatch : "&c[CoinFlip] : You cant bet against yourself!"
+  SessionsLoaded : "&c[CoinFlip] : %total% coin flip sessions are loaded!"
+  YouHaveLost : "&c[CoinFlip] : You have lost the CoinFlip"
+  YouHaveWon : "&a[CoinFlip] : You have won the CoinFlip!"
+  MatchNoLongerExists : "&c[CoinFlip] : This match no longer exists!"
+
+HelpMessages:
+  help:
+    msg: "&a/cf help : displays this help menu."
+  reload:
+    msg: "&a/cf reload : reloads config file."
+    permission: "coinflip.reload"
+  debug:
+    msg: "&a/cf debug <true|false> : turn on / off the debug mode."
+    permission: "coinflip.debug"
+
+# token (TokenEnchant's token), $ (economy via vault)
+# if the keyword 'token' or '$' was not provided it is regarded as this default currency.
+DefaultCurrency: $
+
+BroadcastMessage : false
+GUISoundEffects : true
+Sound:
+  movingSound : BLOCK_NOTE_BLOCK_BASS
+  prizeSound : ENTITY_ARROW_HIT_PLAYER
+  closeInventorySound : ENTITY_PLAYER_LEVELUP
